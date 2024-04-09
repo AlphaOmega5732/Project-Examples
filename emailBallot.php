@@ -2,7 +2,7 @@
 // loop through POST Variables and auto assign // https://www.php.net/manual/en/control-structures.foreach.php
 // $_POST is an array containing the values passed from the form https://www.php.net/manual/en/reserved.variables.post
 foreach($_POST as $x => $value) {  // key => value - $x is the Name of the input(key) => $value is the Value of the input
-			$nameOfVar = $x; // assign the variable "nameOfVar" to $x (name passed from input field)
+			$nameOfVar = $x; // assign the variable "nameOfVar" to $x (name (key) passed from input field)
 			$$nameOfVar = $value; // assign that value of the variable "nameOfVar" as a "variable variables", that is assign the value of nameOfVar as the variable name AND assign $value as the Value		// https://www.php.net/manual/en/language.variables.variable.php	
 		}
 
