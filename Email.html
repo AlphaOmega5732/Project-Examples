@@ -3,30 +3,63 @@
 <head>
 <meta charset="utf-8">	
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matador Condominium Owner's Association Ballot</title>
+<title>Contact</title>
 </head>
+<style>
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
 <body>
-<div>
-	<p>El Matador Condominium Owners' Association<br>
-663 Bishops Lodge Road - Unit #<br>
-	Santa Fe, NM 87501</p>
-	<h2>BALLOT</h2> 
+<div class="container">
+	<p>INFO</p>
+	<h2>TITLE</h2> 
+ <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<p>Below please find the names of the Candidates running for the Board of Directors of the El Matador Condominium Owners' Association for 2022-2024. Three (3) Directors will be elected for a two (2) year term.</p>
-Your Name and Unit Number: <br>
-Name:<br>
-<form method="post" action="/emailBallot.php">
-	<input type="text" name="contactName" value="" required><br>
-	<br>Unit Number:<br>
-	<input type="number" step="1"  name="unitNumber" required><br><br>
-	Vote for up to three (3) Candidates by typing an "X" in the box.  <br>
-	<ol style="list-style-type:none; text-align:left;">
-		<li>candidate 1 (Phase I, Unit #) <input type="checkbox" name="candidate1" value="candidateI"></li>
-		<li>candidate 2 (Phase II, Unit #) <input type="checkbox" name="candidate2" value="candidateII"></li>
-		<li>candidate 3 (Phase III, Unit #) <input type="checkbox" name="candidate3" value="candidateIII"></li>
-	</ol>	
-	<br> 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+<p><label> Email*<br>
+<input size="40" autocomplete="email" aria-required="true" aria-invalid="false" value="" type="email" name="contactEmail"> </label>
+</p>
+<p><label> Telephone<br>
+<input size="40" aria-invalid="false" value="" type="tel" name="contactTel"> </label>
+</p>
+<p><label> Subject*<br>
+<input size="40" aria-required="true" aria-invalid="false" value="" type="text" name="contactSubject"> </label>
+</p>
+<p><label> Message<br>
+<textarea cols="40" rows="10" aria-invalid="false" name="contactMessage"></textarea> </label>
+</p>
+
 	<input type="submit" value="submit">
 </form>
 	</div>
